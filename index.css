@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 100
+}
+
+body{
+    background-color:  #0f212f;
+}
+header{
+    background-color: #1a2c38;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageheaderAndtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header img{
+    height: 100px;
+}
+.imageheaderAndtext p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.imageheaderAndtext p a:hover {
+    text-decoration: underline;
+}
+
+.principalContainer{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #0f212f;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 17px #122635,
+                -7px -7px 17px #112636;
+}
+
+h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: -10px;
+}
+
+form{
+    margin: 30px 0;
+}
+label{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="Password"]{
+    width: 300px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    color:white;
+    border-radius: 50px;
+    background:#1a2c38;
+    border: 0.5px solid #0f212f;
+    box-shadow: 7px 7px 17px #122635,
+    -7px -7px 17px #112636;
+}
+input[type="text"]:focus,
+input[type="Password"]:focus{
+    color: #9aa9bc;
+    box-shadow: inset 7px 7px 17px #122635,
+                inset -7px -7px 17px #112636;
+}
+#user{
+    margin-bottom: 20px;
+}
+button{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color:  #1a2c38; 
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.98);
+}
+#btn{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #9aa9bc;
+}

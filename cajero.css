@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 100
+}
+
+body{
+    background-color:  #0f212f;
+}
+header{
+    background-color: #1a2c38;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageheaderAndtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header img{
+    height: 100px;
+}
+h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.titleAndinputs{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #0f212f;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 17px #122635,
+                -7px -7px 17px #112636;
+}
+form{
+    margin: 30px 0;
+}
+label{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+input[type="number"]{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 18px;
+    color:white;
+    border-radius: 50px;
+    background:#1a2c38;
+    border: 0.5px solid #0f212f;
+    box-shadow: 7px 7px 17px #122635,
+                -7px -7px 17px #132736;
+}
+#btnAgregar, input[type="submit"]{
+    cursor: pointer;
+    color: white;
+    background-color: #296220;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+#btnRetirar, input[type="submit"]{
+    color: white;
+    background-color: 	#8a0808;
+}
+
+input[type="number"]:focus{
+    color: #9aa9bc;
+    box-shadow: inset 7px 7px 17px #122635,
+                inset -7px -7px 17px #112636;
+}
+/*#cantidadRetirada, input[type="number"]:focus{
+    color: #9aa9bc;
+    box-shadow: inset 7px 7px 17px #122635,
+                inset -7px -7px 17px #112636;
+}
+
